@@ -3,7 +3,7 @@ import History from './pages/history'
 import Settings from './pages/settings';
 
 import {
-  BrowserRouter as Router,
+  MemoryRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
@@ -12,19 +12,17 @@ import {
 
 function App() {
   return (
-    <Router>
+    <div>
+      <Router>
         <Routes>
-          <Route path="/settings" element={<Settings/>}>
-   
-          </Route>
-          <Route path="/history" element={<History />}>
-        
-          </Route>
-          <Route path="/" element={<Main />}>
-      
-          </Route>
+          <Route path="/settings" element={<Settings/>}/>
+          <Route path="/history" element={<History />}/>
+          <Route path="/" element={<Main />}/>
         </Routes>
     </Router>
+    </div>
+    
+    
   );
 }
 
