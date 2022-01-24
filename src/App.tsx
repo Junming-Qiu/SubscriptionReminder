@@ -3,7 +3,7 @@ import History from './pages/history'
 import Settings from './pages/settings';
 
 import {
-  MemoryRouter as Router,
+  BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
