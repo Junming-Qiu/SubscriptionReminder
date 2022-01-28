@@ -1,0 +1,9 @@
+{
+    "type": "mysql",
+    "database": "Subscriptions",
+    "username": "root",
+    "password": "Password.1234",
+    "logging": true,
+    "synchronize": false,
+    "entities": ["server/src/entity/*.*"]
+}

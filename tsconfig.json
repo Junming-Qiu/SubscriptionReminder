@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es5",  
     "lib": [
       "dom",
       "dom.iterable",
+      "esnext.asynciterable" //Apollo
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -18,9 +19,11 @@
     "noImplicitAny": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
+    "jsx": "react",
+    "experimentalDecorators": true, //Allow use of entities
+    "emitDecoratorMetadata": true,
   },
   "include": [
-    "./src", "./server"
+    "./src", "./server/src"
   ]
 }
